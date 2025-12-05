@@ -25,18 +25,19 @@ body {
   padding: clamp(0.5rem, 2.5vw, 2rem);
   gap: clamp(0.5rem, 1.5vw, 1.25rem);
   border-radius: clamp(12px, 4vw, 45px);
+  box-shadow: 1px 1px 10px 6px rgb(236, 93, 93);
 }
 
 button {
   border-radius: 999px;
   margin: 0.75rem 0;
-  background-color: rgba(72, 81, 82, 0.78);
+  background-color: rgba(180, 211, 214, 0.78);
   font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   padding: 0.55rem 1.25rem;
   width: 100%;
   max-width: 240px;
   border: none;
-  color: #fff;
+  
   cursor: pointer;
 }
 
