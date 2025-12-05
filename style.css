@@ -1,0 +1,114 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-top: clamp(1rem, 8vw, 6rem);
+  background-color: black;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding: 0 1rem;
+}
+
+#ourContainer {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  width: min(95%, 600px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: clamp(0.5rem, 2.5vw, 2rem);
+  gap: clamp(0.5rem, 1.5vw, 1.25rem);
+  border-radius: clamp(12px, 4vw, 45px);
+}
+
+button {
+  border-radius: 999px;
+  margin: 0.75rem 0;
+  background-color: rgba(72, 81, 82, 0.78);
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  padding: 0.55rem 1.25rem;
+  width: 100%;
+  max-width: 240px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(23, 73, 73);
+}
+button:active {
+  background-color: rgb(142, 209, 209);
+}
+button:focus {
+  outline: 3px solid rgba(255,255,255,0.12);
+  outline-offset: 2px;
+}
+
+h1 {
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: clamp(1.1rem, 6vw, 2rem);
+  margin: 0.25rem 0;
+}
+
+input {
+  padding: clamp(0.5rem, 2.5vw, 1.65rem);
+  background-color: darkgray;
+  border-radius: 10px;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  width: 100%;
+  max-width: 380px;
+  border: none;
+}
+input:focus {
+  outline: 3px solid rgba(255,255,255,0.12);
+  outline-offset: 2px;
+}
+
+
+
+@media (min-width: 700px) {
+  #ourContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(1rem, 2.5vw, 2.25rem);
+    gap: 1rem;
+  }
+  button {
+    width: auto;
+    margin: 0 0.75rem;
+  }
+  input {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 1100px) {
+  #ourContainer {
+    width: min(90%, 900px);
+  }
+}
+
+
+@media (max-width: 360px) {
+  body {
+    padding: 0 0.5rem;
+  }
+  #ourContainer {
+    padding: 0.5rem;
+  }
+}
+
+button, input {
+  transition: background-color 120ms ease, transform 80ms ease;
+}
+
